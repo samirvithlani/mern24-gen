@@ -1,0 +1,6 @@
+PROPS:
+1)props allows to pass data from parent to child component
+a --> b -->c
+///a -->b
+//a -->b --> c
+   -->props drilling..
