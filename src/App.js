@@ -5,6 +5,7 @@ import HeaderComponent from './components/HeaderComponent';
 import { MapDemo } from './components/MapDemo';
 import { SubComponent } from './components/SubComponent';
 import { Students } from './components/students/Students';
+import { UseStateDemo } from './components/UseStateDemo';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       {/* <MapDemo/> */}
       {/* <SubComponent data = {data}></SubComponent> */}
       <Students></Students>
+      {/* <UseStateDemo></UseStateDemo> */}
     </div>
   );
 
