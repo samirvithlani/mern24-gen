@@ -6,6 +6,7 @@ import { MapDemo } from './components/MapDemo';
 import { SubComponent } from './components/SubComponent';
 import { Students } from './components/students/Students';
 import { UseStateDemo } from './components/UseStateDemo';
+import { Blog } from './components/blog/Blog';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
       {/* <HomeComponent title = {title} y = {year} data = {data}></HomeComponent> */}
       {/* <MapDemo/> */}
       {/* <SubComponent data = {data}></SubComponent> */}
-      <Students></Students>
+      {/* <Students></Students> */}
+      <Blog></Blog>
       {/* <UseStateDemo></UseStateDemo> */}
     </div>
   );
