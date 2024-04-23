@@ -12,6 +12,14 @@ export const Blog = () => {
         //console.log("blogs = after add blog...",blogs)
     }
 
+    // const deleteBlog = (id)=>{
+
+    //     var newBlogs = blogs.filter((blog)=>{
+    //         return blog.id !== id
+    //     })
+
+    //     setblogs(newBlogs)
+    // }
 
   return (
     <div>
