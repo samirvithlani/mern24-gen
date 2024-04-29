@@ -20,3 +20,16 @@ hook : built in functions
 useState : state
 
 
+Navbar component
+react-router-dom v6.x
+
+root --> <BrowserRouter>
+
+index.js
+<Routes>
+   <Route path ="/netflixhome" element = {<NetflixHome/>}>
+   <Route path ="/netflixhome" element = {<NetflixHome/>}>
+   <Route path ="/netflixhome" element = {<NetflixHome/>}>
+</Routes>
+
+

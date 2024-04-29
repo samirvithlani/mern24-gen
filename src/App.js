@@ -7,6 +7,12 @@ import { SubComponent } from './components/SubComponent';
 import { Students } from './components/students/Students';
 import { UseStateDemo } from './components/UseStateDemo';
 import { Blog } from './components/blog/Blog';
+import { Navbar } from './Navbar';
+import { Route, Routes } from 'react-router-dom';
+import { NetflixHome } from './netflix/NetflixHome';
+import { NetflixMovies } from './netflix/NetflixMovies';
+import { NetflixDashboard } from './netflix/NetflixDashboard';
+import { NotFound } from './netflix/NotFound';
 
 function App() {
 
@@ -23,13 +29,15 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderComponent></HeaderComponent>
-      {/* <HomeComponent title = {title} y = {year} data = {data}></HomeComponent> */}
-      {/* <MapDemo/> */}
-      {/* <SubComponent data = {data}></SubComponent> */}
-      {/* <Students></Students> */}
-      <Blog></Blog>
-      {/* <UseStateDemo></UseStateDemo> */}
+      <Navbar></Navbar>
+      <Routes>
+        <Route path ="/" element = {<NetflixDashboard/>}></Route>
+        <Route path ="/netflixhome" element = {<NetflixHome/>}></Route>
+        <Route path = "/netflixmovies" element = {<NetflixMovies/>}></Route>
+        {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
+        <Route path  ="/*" element = {<NotFound/>}></Route>
+      </Routes>
+      
     </div>
   );
 
