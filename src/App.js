@@ -20,6 +20,7 @@ import { NetflixShows } from './netflix/NetflixShows';
 import { PlayShows } from './netflix/PlayShows';
 import { NetflixGames } from './netflix/NetflixGames';
 import { PLayGame } from './netflix/PLayGame';
+import { Formhandling1 } from './forms/Formhandling1';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <Route path = "/playshow/:id" element = {<PlayShows/>}></Route>
         <Route path = "/netflixgames" element = {<NetflixGames/>}></Route>
         <Route path  ="/playgame/:id" element = {<PLayGame/>}></Route>
+        <Route path = "/formhandling1" element = {<Formhandling1/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>

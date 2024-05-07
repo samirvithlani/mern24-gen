@@ -38,3 +38,11 @@ click -->
 playShow/id -->
 
 
+
+FORM HANDLING:
+-------------
+react hook forms..
+
+
+
+
