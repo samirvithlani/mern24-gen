@@ -43,6 +43,7 @@ FORM HANDLING:
 -------------
 react hook forms..
 
+npm install react-hook-form
 
 
 
