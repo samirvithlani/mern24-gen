@@ -45,5 +45,55 @@ react hook forms..
 
 npm install react-hook-form
 
+register  -->object
+handleSubmit -->function
+formState:{error}
+
+--------------------------------
+3 fileds
+name
+age
+email
+
+useState
+
+handleSubmmit(cb){
+
+   obj ={
+      name: "sdf",
+      age: 23,
+      email: ""
+   }
+
+   cb(obj)
+
+}
+
+handleSubmit(submitHandler){
+
+
+
+   submitHandler(obj)
+}
+
+
+
+{
+   required:
+   {
+      value:true,message:"Name is Required*"
+   }
+}
+
+{
+            required:
+            {
+                value:true,
+                message:"Age is Required*"
+            }   
+}
+
+
+
 
 
