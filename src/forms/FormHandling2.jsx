@@ -3,7 +3,9 @@ import { useForm } from 'react-hook-form'
 
 export const FormHandling2 = () => {
     const {register,handleSubmit,formState:{errors}} = useForm()
+
     console.log("errors...",errors) //error object
+    
     const submitHandler = (data)=>{
         console.log("data...",data)
     }
