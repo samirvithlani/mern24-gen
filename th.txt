@@ -94,6 +94,43 @@ handleSubmit(submitHandler){
 }
 
 
+------------------------------------------------
+API CALLING
+
+api: application programming interface
+
+REACT JS | ANGULAR JS  | ANDROID .... | database connection 
+
+API :-[URL] -> REST APIS
+
+
+GOOGLE --> * : API --->
+ZOMATO | uber : -- google map : api --> map --> 
+
+GOOGLE FORM  : --> android : form -->submit --> [API] -->GOOGLE DATABSE
+
+5 type of API | request methods:
+GET : fetch data
+POST : insert data
+PUT : update data
+DELETE : delete data
+PATCH : update data | partial update
+
+---------------------------------------------------------------------
+
+api consumption:
+--------------------------------------------------------------------
+js --> fetch()
+
+axios:
+npm install axios
+
+api resposne : JSON
+
+
+axios.data --> actual response
+
+
 
 
 
