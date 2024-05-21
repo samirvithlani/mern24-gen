@@ -24,6 +24,7 @@ import { Formhandling1 } from './forms/Formhandling1';
 import { FormHandling2 } from './forms/FormHandling2';
 import { FormHandling3 } from './forms/FormHandling3';
 import { ApiDemo1 } from './apis/ApiDemo1';
+import { UseEffectDemo } from './UseEffectDemo';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
         <Route path = "/formhandling1" element = {<Formhandling1/>}></Route>
         <Route path = "/formhandling2" element = {<FormHandling2/>}></Route>
         <Route path = "/formhandling3" element = {<FormHandling3/>}></Route>
+        <Route path = "/useeffectdemo" element = {<UseEffectDemo/>}></Route>
         <Route path = "/apidemo1" element = {<ApiDemo1/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>

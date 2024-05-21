@@ -133,4 +133,14 @@ axios.data --> actual response
 
 
 
+useEffect: lifecycle hook
+to handle side effects in react js we use useEffect hook
+
+:side Effects:
+eg:
+1)api calling
+2)chat application
+: send --> 
+   replay :
+
 
