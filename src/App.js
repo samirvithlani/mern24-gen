@@ -25,6 +25,7 @@ import { FormHandling2 } from './forms/FormHandling2';
 import { FormHandling3 } from './forms/FormHandling3';
 import { ApiDemo1 } from './apis/ApiDemo1';
 import { UseEffectDemo } from './UseEffectDemo';
+import { DepedentDropdown } from './components/DepedentDropdown';
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
         <Route path = "/formhandling3" element = {<FormHandling3/>}></Route>
         <Route path = "/useeffectdemo" element = {<UseEffectDemo/>}></Route>
         <Route path = "/apidemo1" element = {<ApiDemo1/>}></Route>
+        <Route path ="/depdrop" element = {<DepedentDropdown/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>

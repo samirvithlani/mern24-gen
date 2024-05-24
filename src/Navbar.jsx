@@ -54,6 +54,12 @@ export const Navbar = () => {
             useeffectdemo
             </Link>
           </li>
+          
+          <li class="nav-item active">
+            <Link class="nav-link" to="/depdrop">
+            depdrop
+            </Link>
+          </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/apidemo1">
             API DEMO 1
