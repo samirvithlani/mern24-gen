@@ -5,6 +5,7 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
   const [message, setmessage] = useState("");
@@ -114,6 +115,7 @@ export const ApiDemo1 = () => {
                   >
                     DETAIL
                   </button>
+                  <Link className="btn btn-success" to = {`/userupdate/${user._id}`}>UPDATE</Link>
                 </td>
               </tr>
             );
