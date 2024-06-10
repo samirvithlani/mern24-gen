@@ -29,6 +29,8 @@ import { DepedentDropdown } from './components/DepedentDropdown';
 import { ApiDemo2 } from './apis/ApiDemo2';
 import { ApiDemo3 } from './apis/ApiDemo3';
 import { UserUpdate } from './apis/UserUpdate';
+import { MovieApi } from './apis/MovieApi';
+import { ApiDemo4 } from './apis/ApiDemo4';
 
 function App() {
 
@@ -64,8 +66,10 @@ function App() {
         <Route path = "/apidemo1" element = {<ApiDemo1/>}></Route>
         <Route path = "/apidemo2" element = {<ApiDemo2/>}></Route>
         <Route path = "/apidemo3" element = {<ApiDemo3/>}></Route>
+        <Route path = "/apidemo4" element = {<ApiDemo4/>}></Route>
         <Route path ="/depdrop" element = {<DepedentDropdown/>}></Route>
         <Route path = "/userupdate/:id" element = {<UserUpdate/>}></Route>
+        <Route path = "/movieapi" element = {<MovieApi/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
