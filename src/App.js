@@ -31,6 +31,9 @@ import { ApiDemo3 } from './apis/ApiDemo3';
 import { UserUpdate } from './apis/UserUpdate';
 import { MovieApi } from './apis/MovieApi';
 import { ApiDemo4 } from './apis/ApiDemo4';
+import { Movie1Api } from './apis/Movie1Api';
+import { Google } from './contextDemo/Google';
+import { AppContext } from './context';
 
 function App() {
 
@@ -48,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <AppContext.Provider value = {{title}}>
       <Routes>
         <Route path ="/" element = {<NetflixDashboard/>}></Route>
         <Route path ="/netflixhome" element = {<NetflixHome/>}></Route>
@@ -69,10 +73,12 @@ function App() {
         <Route path = "/apidemo4" element = {<ApiDemo4/>}></Route>
         <Route path ="/depdrop" element = {<DepedentDropdown/>}></Route>
         <Route path = "/userupdate/:id" element = {<UserUpdate/>}></Route>
-        <Route path = "/movieapi" element = {<MovieApi/>}></Route>
+        <Route path = "/movieapi" element = {<Movie1Api/>}></Route>
+        <Route path = "/google" element = {<Google/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
+      </AppContext.Provider>
       
     </div>
   );
