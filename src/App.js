@@ -34,6 +34,8 @@ import { ApiDemo4 } from './apis/ApiDemo4';
 import { Movie1Api } from './apis/Movie1Api';
 import { Google } from './contextDemo/Google';
 import { AppContext } from './context';
+import { PostTwwit } from './twitter/PostTwwit';
+import { BloagMain } from './blog/BloagMain';
 
 function App() {
 
@@ -75,6 +77,8 @@ function App() {
         <Route path = "/userupdate/:id" element = {<UserUpdate/>}></Route>
         <Route path = "/movieapi" element = {<Movie1Api/>}></Route>
         <Route path = "/google" element = {<Google/>}></Route>
+        <Route path = "/postTweet" element = {<PostTwwit/>}></Route>
+        <Route path='/blogmain' element = {<BloagMain/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
