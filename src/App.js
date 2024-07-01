@@ -36,6 +36,7 @@ import { Google } from './contextDemo/Google';
 import { AppContext } from './context';
 import { PostTwwit } from './twitter/PostTwwit';
 import { BloagMain } from './blog/BloagMain';
+import { BookComponent } from './components/BookComponent';
 
 function App() {
 
@@ -79,6 +80,7 @@ function App() {
         <Route path = "/google" element = {<Google/>}></Route>
         <Route path = "/postTweet" element = {<PostTwwit/>}></Route>
         <Route path='/blogmain' element = {<BloagMain/>}></Route>
+        <Route path  ="/books" element = {<BookComponent/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>

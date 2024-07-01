@@ -11,7 +11,7 @@ export const Navbar = () => {
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <Link class="nav-link" to="/netflixhome">
-              Home 
+              Home
             </Link>
           </li>
           <li class="nav-item active">
@@ -24,86 +24,90 @@ export const Navbar = () => {
               shows
             </Link>
           </li>
-          
+
           <li class="nav-item active">
             <Link class="nav-link" to="/netflixgames">
-            netflixgames
-            </Link>
-          </li>
-          
-          <li class="nav-item active">
-            <Link class="nav-link" to="/formhandling1">
-            formhandling1
+              netflixgames
             </Link>
           </li>
 
-          
+          <li class="nav-item active">
+            <Link class="nav-link" to="/formhandling1">
+              formhandling1
+            </Link>
+          </li>
+
           <li class="nav-item active">
             <Link class="nav-link" to="/formhandling2">
-            formhandling2
+              formhandling2
             </Link>
           </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/formhandling3">
-            formhandling3
+              formhandling3
             </Link>
           </li>
-          
+
           <li class="nav-item active">
             <Link class="nav-link" to="/useeffectdemo">
-            useeffectdemo
+              useeffectdemo
             </Link>
           </li>
-          
+
           <li class="nav-item active">
             <Link class="nav-link" to="/depdrop">
-            depdrop
+              depdrop
             </Link>
           </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/apidemo1">
-            API DEMO 1
+              API DEMO 1
             </Link>
           </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/apidemo2">
-            API DEMO 2
+              API DEMO 2
             </Link>
           </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/apidemo3">
-            API DEMO 3
+              API DEMO 3
             </Link>
           </li>
           <li class="nav-item active">
             <Link class="nav-link" to="/apidemo4">
-            API DEMO 4
+              API DEMO 4
             </Link>
           </li>
-          
-          <li class="nav-item active">
+
+          {/* <li class="nav-item active">
             <Link class="nav-link" to="/movieapi">
-            movieapi3
+              movieapi3
             </Link>
           </li>
 
           <li class="nav-item active">
             <Link class="nav-link" to="/google">
-            google
+              google
             </Link>
-          </li>          
-          
+          </li>
+
           <li class="nav-item active">
             <Link class="nav-link" to="/postTweet">
-            postTweet
+              postTweet
             </Link>
-          </li>      
-          
+          </li> */}
+
           <li class="nav-item active">
             <Link class="nav-link" to="/blogmain">
-            blogmain
+              blogmain
             </Link>
-          </li>       
+          </li>
+          <li class="nav-item active">
+            <Link class="nav-link" to="/books">
+              books
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

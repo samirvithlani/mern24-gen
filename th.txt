@@ -147,3 +147,17 @@ eg:
 props ->props drillig
 context ->api
 redux
+---------------------------------
+props: parent to child
+context: global state management
+redux: global state management : [*]
+
+
+store :[state[data]]
+action:(type,payload)
+reducers: [action,state]
+
+
+
+action -->filed
+redcucer -->file
