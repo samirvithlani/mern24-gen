@@ -37,6 +37,8 @@ import { AppContext } from './context';
 import { PostTwwit } from './twitter/PostTwwit';
 import { BloagMain } from './blog/BloagMain';
 import { BookComponent } from './components/BookComponent';
+import { BankComponent } from './components/bank/BankComponent';
+import { useSelector } from 'react-redux';
 
 function App() {
 
@@ -49,10 +51,12 @@ function App() {
     age:25
   }
 
+  const themeState = useSelector((state)=>state.theme.theme)
+  console.log("themeState",themeState)
 
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:themeState == "light"?"white":"black"}}>
       <Navbar></Navbar>
       <AppContext.Provider value = {{title}}>
       <Routes>
@@ -81,6 +85,7 @@ function App() {
         <Route path = "/postTweet" element = {<PostTwwit/>}></Route>
         <Route path='/blogmain' element = {<BloagMain/>}></Route>
         <Route path  ="/books" element = {<BookComponent/>}></Route>
+        <Route path= '/bank' element  ={<BankComponent/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
