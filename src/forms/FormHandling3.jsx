@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useSelector } from "react-redux";
 
 export const FormHandling3 = () => {
   const {
@@ -8,6 +9,11 @@ export const FormHandling3 = () => {
     formState: { errors },
     reset,
   } = useForm({ mode: "all" });
+
+  const contentState = useSelector((state)=>state.content)
+  console.log("state",contentState?.content)
+  console.log("state",contentState?.isLoading)
+  console.log("state",contentState?.error)
 
   const [output, setoutput] = useState({});
   const [isSubbmited, setisSubbmited] = useState(false);

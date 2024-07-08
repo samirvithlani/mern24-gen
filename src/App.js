@@ -38,7 +38,9 @@ import { PostTwwit } from './twitter/PostTwwit';
 import { BloagMain } from './blog/BloagMain';
 import { BookComponent } from './components/BookComponent';
 import { BankComponent } from './components/bank/BankComponent';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchContent } from './redux/ContentSlice';
 
 function App() {
 
@@ -54,6 +56,15 @@ function App() {
   const themeState = useSelector((state)=>state.theme.theme)
   console.log("themeState",themeState)
 
+  const dispatch = useDispatch()
+
+
+  useEffect(() => {
+
+    dispatch(fetchContent())
+        
+  }, [])
+  
 
   return (
     <div className="App" style={{backgroundColor:themeState == "light"?"white":"black"}}>
