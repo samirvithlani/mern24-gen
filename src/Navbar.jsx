@@ -4,20 +4,24 @@ import { Link } from "react-router-dom";
 import { setTheme } from "./redux/ThemeSlice";
 
 export const Navbar = () => {
-
   // const state = useSelector((state)=>state)
   // console.log("state",state)
-  const cartState  = useSelector((state)=>state.cart.cart)
-  console.log("state",cartState)
+  const cartState = useSelector((state) => state.cart.cart);
+  console.log("state", cartState);
 
-  const bankState = useSelector((state)=>state.bank.balance)
-  console.log("bankState",bankState)
+  const bankState = useSelector((state) => state.bank.balance);
+  console.log("bankState", bankState);
 
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button onClick={()=>{dispatch(setTheme("dark"))}}>change theme</button>
+      <button
+        onClick={() => {
+          dispatch(setTheme("dark"));
+        }}
+      >
+        change theme
+      </button>
       <a class="navbar-brand" href="#">
         Navbar
       </a>
@@ -121,19 +125,26 @@ export const Navbar = () => {
             <Link class="nav-link" to="/books">
               books
             </Link>
-            {
-              cartState?.length
-            }
+            {cartState?.length}
           </li>
           <li class="nav-item active">
-            {
-              bankState
-            }
+            {bankState}
             <Link class="nav-link" to="/bank">
               bank
             </Link>
             
           </li>
+          <li class="nav-item active">
+              <Link class="nav-link" to="/flipkart">
+                flipkart
+              </Link>
+            </li>
+            
+            <li class="nav-item active">
+              <Link class="nav-link" to="/flipkart/prod">
+                flipkart-prod
+              </Link>
+            </li>
         </ul>
       </div>
     </nav>
