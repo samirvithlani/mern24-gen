@@ -1,0 +1,20 @@
+mui
+ratings:
+5 start
+1) very bad
+2) bad
+3) good
+4) very good
+5) excellent
+
+slider:
+min slider 10000, max slider 50000
+array : employees array : id name salary
+100000 < employees
+38< employees
+
+
+
+switch:redux
+
+change theme

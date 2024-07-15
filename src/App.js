@@ -43,6 +43,7 @@ import { useEffect } from 'react';
 import { fetchContent } from './redux/ContentSlice';
 import { Index } from './flipkart/Index';
 import { SubIndex } from './flipkart/SubIndex';
+import { MuiButton } from './mui/MuiButton';
 
 function App() {
 
@@ -101,6 +102,7 @@ function App() {
         <Route path= '/bank' element  ={<BankComponent/>}></Route>
         <Route path='/flipkart' element = {<Index/>}></Route>
         <Route path='/flipkart/prod' element = {<SubIndex/>}></Route>
+        <Route path='/mui/button' element = {<MuiButton/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>

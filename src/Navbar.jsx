@@ -97,6 +97,11 @@ export const Navbar = () => {
               API DEMO 4
             </Link>
           </li>
+          <li class="nav-item active">
+            <Link class="nav-link" to="/mui/button">
+              BUTTON
+            </Link>
+          </li>
 
           {/* <li class="nav-item active">
             <Link class="nav-link" to="/movieapi">
@@ -115,7 +120,7 @@ export const Navbar = () => {
               postTweet
             </Link>
           </li> */}
-
+{/* 
           <li class="nav-item active">
             <Link class="nav-link" to="/blogmain">
               blogmain
@@ -144,7 +149,7 @@ export const Navbar = () => {
               <Link class="nav-link" to="/flipkart/prod">
                 flipkart-prod
               </Link>
-            </li>
+            </li> */}
         </ul>
       </div>
     </nav>
