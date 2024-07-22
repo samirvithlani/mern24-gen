@@ -44,6 +44,9 @@ import { fetchContent } from './redux/ContentSlice';
 import { Index } from './flipkart/Index';
 import { SubIndex } from './flipkart/SubIndex';
 import { MuiButton } from './mui/MuiButton';
+import { Muitable1 } from './mui/Muitable1';
+import { MuiTable2 } from './mui/MuiTable2';
+import { MuiLayout } from './mui/MuiLayout';
 
 function App() {
 
@@ -103,6 +106,8 @@ function App() {
         <Route path='/flipkart' element = {<Index/>}></Route>
         <Route path='/flipkart/prod' element = {<SubIndex/>}></Route>
         <Route path='/mui/button' element = {<MuiButton/>}></Route>
+        <Route path='/mui/table' element = {<MuiTable2/>}></Route>
+        <Route path = "/mui/layout" element = {<MuiLayout/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>

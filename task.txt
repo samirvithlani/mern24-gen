@@ -18,3 +18,15 @@ array : employees array : id name salary
 switch:redux
 
 change theme
+
+
+mui table task:
+colors chnage respect to status
+text color change respect to age 
+
+>60 red
+>30 yellow
+<30 green
+
+:apply custom pagination
+export : with cust file name...

@@ -102,6 +102,17 @@ export const Navbar = () => {
               BUTTON
             </Link>
           </li>
+          <li class="nav-item active">
+            <Link class="nav-link" to="/mui/table">
+              TABLE
+            </Link>
+          </li>
+          <li class="nav-item active">
+            <Link class="nav-link" to="/mui/layout">
+              layout
+            </Link>
+          </li>
+
 
           {/* <li class="nav-item active">
             <Link class="nav-link" to="/movieapi">
