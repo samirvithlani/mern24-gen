@@ -112,6 +112,17 @@ export const Navbar = () => {
               layout
             </Link>
           </li>
+          
+          <li class="nav-item active">
+            <Link class="nav-link" to="/chartdemo">
+            chartdemo
+            </Link>
+          </li>
+          <li class="nav-item active">
+            <Link class="nav-link" to="/nodeuser">
+            nodeuser
+            </Link>
+          </li>
 
 
           {/* <li class="nav-item active">

@@ -47,6 +47,9 @@ import { MuiButton } from './mui/MuiButton';
 import { Muitable1 } from './mui/Muitable1';
 import { MuiTable2 } from './mui/MuiTable2';
 import { MuiLayout } from './mui/MuiLayout';
+import { ChartDemo1 } from './charts/ChartDemo1';
+import { ChartDemo2 } from './charts/ChartDemo2';
+import { NodeUsers } from './components/NodeUsers';
 
 function App() {
 
@@ -108,6 +111,8 @@ function App() {
         <Route path='/mui/button' element = {<MuiButton/>}></Route>
         <Route path='/mui/table' element = {<MuiTable2/>}></Route>
         <Route path = "/mui/layout" element = {<MuiLayout/>}></Route>
+        <Route path = "/chartdemo" element ={<ChartDemo2/>}></Route>
+        <Route path ="/nodeuser"element ={<NodeUsers/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
