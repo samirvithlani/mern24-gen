@@ -50,6 +50,7 @@ import { MuiLayout } from './mui/MuiLayout';
 import { ChartDemo1 } from './charts/ChartDemo1';
 import { ChartDemo2 } from './charts/ChartDemo2';
 import { NodeUsers } from './components/NodeUsers';
+import { UploadFile } from './components/UploadFile';
 
 function App() {
 
@@ -112,7 +113,7 @@ function App() {
         <Route path='/mui/table' element = {<MuiTable2/>}></Route>
         <Route path = "/mui/layout" element = {<MuiLayout/>}></Route>
         <Route path = "/chartdemo" element ={<ChartDemo2/>}></Route>
-        <Route path ="/nodeuser"element ={<NodeUsers/>}></Route>
+        <Route path ="/nodeuser"element ={<UploadFile/>}></Route>
         {/* <Route path = "/*" element = {<h1>NO PAGE FOUND</h1>}></Route> */}
         <Route path  ="/*" element = {<NotFound/>}></Route>
       </Routes>
